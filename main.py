@@ -253,11 +253,11 @@ class Game:
                 return
                 
         if self.state == "game":
-            if self.game_over and self.reset_button.is_clicked(pos):
+            if self.reset_button.is_clicked(pos):
                 self.reset_game()
                 self.state = "menu"
                 return
-                
+            
             if self.reset_button.is_clicked(pos):
                 self.reset_game()
                 return
